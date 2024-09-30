@@ -1,0 +1,5 @@
+Product_Key,Date_Key,Store_Key,Fixed_Costs,Variable_Costs,Product_Name,Category,Store_Name,Territory,Date,Month
+PD_101,DT_102,ST_101,,96.5,Shirt,Clothes,ABC Store,Kolkata,13/01/2022,Januaryo
+PD_102,DT_101,ST_101,150.0,130.0,Boot,Shoes & Accessories,ABC Store,Kolkata,12/01/2022,Januaryo
+PD_104,DT_104,ST_103,159.0,,T-Shirt,Clothes,Cloth Sohppy,Kolkata,12/13/2022,Aprilo
+PD_103,DT_103,ST_102,200.0,,Socks,Shoes & Accessories,Cloth Shoppers Shop,Pune,12/02/2022,Februaryo

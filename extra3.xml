@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<starSchema name="MarketData">
+<DimensionSet>
+<Dimension Primary_Key="Product_Key">Product
+<Dimattribute datatype="str">Product_Key</Dimattribute>
+<Dimattribute datatype="str">Product_Name</Dimattribute>
+<Dimattribute datatype="str">Category</Dimattribute>
+</Dimension>
+<Dimension Primary_Key="Store_Key">Store
+<Dimattribute datatype="str">Store_Key</Dimattribute>
+<Dimattribute datatype="str">Store_Name</Dimattribute>
+<Dimattribute datatype="str">Territory</Dimattribute>
+</Dimension>
+<Dimension Primary_Key="Date_Key">Time
+<Dimattribute datatype="str">Date_Key</Dimattribute>
+<Dimattribute datatype="date">Date</Dimattribute>
+<Dimattribute datatype="month">Month</Dimattribute>
+</Dimension>
+</DimensionSet>
+<FactTable>Sales_Fact_Prob_Dup
+<DimLinks datatype="str">Product_Key
+<PK>Product_Key</PK>
+</DimLinks>
+<DimLinks datatype="str">Date_Key
+<PK>Date_Key</PK>
+</DimLinks>
+<DimLinks datatype="str">Store_Key
+<PK>Store_Key</PK>
+</DimLinks>
+<FactVarSet datatype="float">Fixed_Costs</FactVarSet>
+<FactVarSet datatype="float">Variable_Costs</FactVarSet>
+</FactTable>
+<colStore>MarketSchema
+<DimFilePath>C:\\Users\Aniket\Documents\ColFolderDim</DimFilePath>
+<FactFilePath>C:\\Users\Aniket\Documents\ColFolderFact</FactFilePath>
+</colStore>
+</starSchema>

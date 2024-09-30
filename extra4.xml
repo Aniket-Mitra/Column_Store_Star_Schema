@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<starSchema name="MarketExample">
+<DimensionSet>
+<Dimension Primary_Key="cust_id">dim_cust
+<Dimattribute datatype="str">cust_id</Dimattribute>
+<Dimattribute datatype="str">customer_name</Dimattribute>
+<Dimattribute datatype="str">city</Dimattribute>
+<Dimattribute datatype="str">state</Dimattribute>
+<Dimattribute datatype="str">customer_segment</Dimattribute>
+</Dimension>
+<Dimension Primary_Key="ord_id">dim_order
+<Dimattribute datatype="str">ord_id</Dimattribute>
+<Dimattribute datatype="date">order_date</Dimattribute>
+<Dimattribute datatype="str">order_priority</Dimattribute>
+</Dimension>
+<Dimension Primary_Key="prod_id">dim_prod
+<Dimattribute datatype="str">prod_id</Dimattribute>
+<Dimattribute datatype="str">product_category</Dimattribute>
+<Dimattribute datatype="str">product_sub_category</Dimattribute>
+</Dimension>
+<Dimension Primary_Key="ship_id">dim_shipping
+<Dimattribute datatype="str">ship_id</Dimattribute>
+<Dimattribute datatype="str">ship_mode</Dimattribute>
+<Dimattribute datatype="str">ship_date</Dimattribute>
+</Dimension>
+</DimensionSet>
+<FactTable>fact_sales
+<DimLinks datatype="str">ord_id
+<PK>ord_id</PK>
+</DimLinks>
+<DimLinks datatype="str">prod_id
+<PK>prod_id</PK>
+</DimLinks>
+<DimLinks datatype="str">ship_id
+<PK>ship_id</PK>
+</DimLinks>
+<DimLinks datatype="str">cust_id
+<PK>cust_id</PK>
+</DimLinks>
+<FactVarSet datatype="float">sales</FactVarSet>
+<FactVarSet datatype="float">discount</FactVarSet>
+<FactVarSet datatype="integer">order_quantity</FactVarSet>
+<FactVarSet datatype="float">profit</FactVarSet>
+<FactVarSet datatype="float">shipping_Cost</FactVarSet>
+<FactVarSet datatype="float">product_base_margin</FactVarSet>
+</FactTable>
+<colStore>MarketSchema
+<DimFilePath>C:\\Users\Aniket\Documents\ColFolderDim</DimFilePath>
+<FactFilePath>C:\\Users\Aniket\Documents\ColFolderFact</FactFilePath>
+</colStore>
+</starSchema>

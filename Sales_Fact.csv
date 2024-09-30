@@ -1,0 +1,6 @@
+Product_Key,Date_Key,Store_Key,Fixed_Costs,Variable_Costs
+PD_103,DT_102,ST_101,100,96.5
+PD_102,,,150,130.0
+PD_101,DT_104,ST_103,159,139.5
+PD_103,DT_103,ST_102,200,
+PD_103,,ST_101,201,201.0
