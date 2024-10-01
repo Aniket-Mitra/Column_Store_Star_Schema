@@ -1,4 +1,4 @@
-# Data Modelling COurse (CS 605)
+# Data Modelling Course (CS 605)
 
 **Project Objective**- To store relational tables in star schema format from row-oriented format to **column oriented** format for memory-efficient computing.
 
@@ -29,4 +29,12 @@ To run the pipeline it's simple.
 ## Snpshots
 ![Alt text](Pic_Folder/successful.png)
 
-![Alt text](Pic Folder/err1_sc_exists.png)
+![Alt text](Pic_Folder/err1_sc_exists.png)
+
+![Alt text](Pic_Folder/PK_violation.png)
+
+![Alt text](Pic_Folder/col_store.png)
+
+![Alt text](Pic_Folder/col_store_csv.png)
+
+![Alt text](Pic_Folder/agg_query.png)
