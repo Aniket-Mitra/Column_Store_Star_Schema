@@ -28,3 +28,5 @@ To run the pipeline it's simple.
 
 ## Snpshots
 ![Alt text](Pic_Folder/successful.png)
+
+![Alt text](Pic Folder/err1_sc_exists.png)
