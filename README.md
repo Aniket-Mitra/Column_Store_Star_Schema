@@ -24,3 +24,7 @@ To run the pipeline it's simple.
                           
                           f. Otherwise throws the error accordingly like- *Foreign Key Constraint Issue*.
 3. After we create our columnar storage of data we can provide aggregate queries like sum, average etc. on numerical column grouped by any of the descriptive columns using code and print and save the results using code file **data_retrieval.py**.
+
+
+## Snpshots
+![Alt text](Pic_Folder/successful.png)
