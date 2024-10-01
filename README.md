@@ -28,13 +28,24 @@ To run the pipeline it's simple.
 
 ## Snpshots
 ![Alt text](Pic_Folder/successful.png)
+**Fig1.** Successfully Stored Star-Schema Data in Column-Oriented Format
+
 
 ![Alt text](Pic_Folder/err1_sc_exists.png)
+**Fig2.** Column-Store format already exists for given data error
+
 
 ![Alt text](Pic_Folder/PK_violation.png)
+**Fig3.** Primary Key Violation Error
+
 
 ![Alt text](Pic_Folder/col_store.png)
+**Fig4.** Column-Oriented Storage- Each file contains information about each column
+
 
 ![Alt text](Pic_Folder/col_store_csv.png)
+**Fig5.**Inside a file- all information for an arow stored in a single file
+
 
 ![Alt text](Pic_Folder/agg_query.png)
+**Fig6.** Sample Aggregation Query & Result
