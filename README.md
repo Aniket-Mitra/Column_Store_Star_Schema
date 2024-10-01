@@ -14,7 +14,7 @@ To run the pipeline it's simple.
    
                           a. First check if the column-store already exists for the given schema.
    
-.                         b. Secondly checks for any PK issue/violation in the dimensions table.
+                          b. Secondly checks for any PK issue/violation in the dimensions table.
 
                           c. Thirdly checks for any FK issue in the Fact Table side.
                           
